@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "glowsquid",
+  "version": "${version}",
+  "name": "Glowsquid",
+  "description": "Glow squids in 1.16",
+  "authors": [
+    "vcokltfre"
+  ],
+  "contact": {
+    "website": "vcokltf.re"
+  },
+  "license": "MIT",
+  "icon": "assets/glowsquid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "re.vcokltf.glowsquid.client.GlowsquidClient"
+    ],
+    "main": [
+      "re.vcokltf.glowsquid.Glowsquid"
+    ]
+  },
+  "mixins": [
+    "glowsquid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.3+build.211",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
