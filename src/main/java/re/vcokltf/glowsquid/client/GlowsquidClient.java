@@ -23,6 +23,8 @@ public class GlowsquidClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.GLOWING_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.UNDERWATER_TORCH, RenderLayer.getCutout());
+
         EntityRendererRegistry.INSTANCE.register(Glowsquid.GLOW_SQUID, (dispatcher, context) -> {
             return new GlowSquidEntityRenderer(dispatcher);
         });

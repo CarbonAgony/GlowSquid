@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_torch",
+  "textures": {
+    "particle": "glowsquid:block/underwater_torch",
+    "torch": "glowsquid:block/underwater_torch"
+  }
+}
