@@ -4,6 +4,8 @@
   "package": "re.vcokltf.glowsquid.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "SpawnRestrictionAccessor",
+    "SpawnSettingsAccessor"
   ],
   "client": [
   ],
