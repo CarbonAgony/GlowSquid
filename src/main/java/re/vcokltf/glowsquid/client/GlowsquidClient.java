@@ -24,6 +24,7 @@ public class GlowsquidClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.GLOWING_GLASS, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.UNDERWATER_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.UNDERWATER_TORCH_WALL, RenderLayer.getCutout());
 
         EntityRendererRegistry.INSTANCE.register(Glowsquid.GLOW_SQUID, (dispatcher, context) -> {
             return new GlowSquidEntityRenderer(dispatcher);

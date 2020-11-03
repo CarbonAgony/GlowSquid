@@ -40,7 +40,6 @@ public class Spawns {
                     (biome.equals(REGISTRY.get(BiomeKeys.WARM_OCEAN))) ||
                     (biome.equals(REGISTRY.get(BiomeKeys.DEEP_COLD_OCEAN)))) {
                 addSpawnToBiome(biome, new SpawnEntry(Glowsquid.GLOW_SQUID, 5, 3, 5));
-                System.out.println(biome);
             }
         }
     }
