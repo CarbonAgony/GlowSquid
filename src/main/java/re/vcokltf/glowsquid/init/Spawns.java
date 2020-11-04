@@ -39,7 +39,7 @@ public class Spawns {
                     (biome.equals(REGISTRY.get(BiomeKeys.COLD_OCEAN))) ||
                     (biome.equals(REGISTRY.get(BiomeKeys.WARM_OCEAN))) ||
                     (biome.equals(REGISTRY.get(BiomeKeys.DEEP_COLD_OCEAN)))) {
-                addSpawnToBiome(biome, new SpawnEntry(Glowsquid.GLOW_SQUID, 5, 3, 5));
+                addSpawnToBiome(biome, new SpawnEntry(EntityInit.GLOW_SQUID, 5, 3, 5));
             }
         }
     }
@@ -58,6 +58,6 @@ public class Spawns {
     }
 
     private static void registerSpawnRestrictions() {
-        SpawnRestrictionAccessor.invokeRegister(Glowsquid.GLOW_SQUID, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GlowSquidEntity::canGlowquidSpawn);
+        SpawnRestrictionAccessor.invokeRegister(EntityInit.GLOW_SQUID, SpawnRestriction.Location.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, GlowSquidEntity::canGlowquidSpawn);
     }
 }

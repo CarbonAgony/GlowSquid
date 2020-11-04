@@ -15,10 +15,12 @@ public class GlowSquidEntityRenderer extends MobEntityRenderer<GlowSquidEntity, 
     public GlowSquidEntityRenderer(EntityRenderDispatcher entityRenderDispatcher) {
         super(entityRenderDispatcher, new GlowSquidEntityModel(), 0.7f);
     }
+
     @Override
     public Identifier getTexture(GlowSquidEntity entity) {
         return new Identifier("glowsquid", "textures/entity/glowsquid/glow_squid.png");
     }
+
     protected void setupTransforms(GlowSquidEntity squidEntity, MatrixStack matrixStack, float f, float g, float h) {
         float i = MathHelper.lerp(h, squidEntity.prevTiltAngle, squidEntity.tiltAngle);
         float j = MathHelper.lerp(h, squidEntity.prevRollAngle, squidEntity.rollAngle);

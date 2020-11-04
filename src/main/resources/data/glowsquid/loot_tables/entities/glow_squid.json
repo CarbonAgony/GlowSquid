@@ -1,32 +1,42 @@
 {
-  "type": "minecraft:entity",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
-            "type": "item",
-            "name": "minecraft:written_book",
-            "weight": 1,
-            "functions": [{
-              "function": "set_nbt",
-              "tag": "{pages:['{\"text\":\"Yep. Thanks for getting this useless mob added to the game Dream. This is worse than stealing credit for pack.png.\"}'],title:\"Dream Is Bad\",author:\"The Community\"}"
-            }]
+          "type": "minecraft:item",
+          "weight": 35,
+          "name": "glowsquid:glowing_ink_sac",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
         },
         {
-          "type": "item",
-          "name": "glowsquid:glowing_ink_sac",
-          "weight": 35,
-          "functions":[{
-            "function": "set_count",
-            "count": {
-              "min": 1,
-              "max": 3
+          "type": "minecraft:item",
+          "weight": 100,
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{pages:['{\"text\":\"Yep. Thanks for getting this useless mob added to the game Dream. This is worse than stealing credit for finding pewds seed.\"}'],title:\"Dream Is Bad\",author:\"The Community\"}"
             }
-          }]
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_explosion": true
+              }
+            }
+          ]
         }
       ]
     }
   ]
-}
 }

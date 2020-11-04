@@ -21,12 +21,13 @@ import java.util.Optional;
 
 public final class PotionShit {
 
-    private PotionShit() {}
+    private PotionShit() {
+    }
 
     private static final Collection<RecipeToInit> RECIPES = new ArrayList<RecipeToInit>();
 
 
-    public static final Potion GLOWING = register("glowing", new Potion(new StatusEffectInstance(StatusEffects.GLOWING, 6000)), Glowsquid.GLOWING_INK_SAC, Potions.AWKWARD);
+    public static final Potion GLOWING = register("glowing", new Potion(new StatusEffectInstance(StatusEffects.GLOWING, 6000)), ItemInit.GLOWING_INK_SAC, Potions.AWKWARD);
 
 
     public static void init() {
@@ -50,10 +51,10 @@ public final class PotionShit {
         Optional<Potion> inStrong = Registry.POTION.getOrEmpty(new Identifier(potionInId.getNamespace(), "strong_" + potionInId.getPath()));
         Optional<Potion> outLong = Registry.POTION.getOrEmpty(new Identifier(potionOutId.getNamespace(), "long_" + potionOutId.getPath()));
         Optional<Potion> outStrong = Registry.POTION.getOrEmpty(new Identifier(potionOutId.getNamespace(), "strong_" + potionOutId.getPath()));
-        if(outLong.isPresent() && inLong.isPresent()) {
+        if (outLong.isPresent() && inLong.isPresent()) {
             BrewingRecipeRegistryAccessor.invokeRegisterPotionRecipe(inLong.get(), ingredient, outLong.get());
         }
-        if(outStrong.isPresent() && inStrong.isPresent()) {
+        if (outStrong.isPresent() && inStrong.isPresent()) {
             BrewingRecipeRegistryAccessor.invokeRegisterPotionRecipe(inStrong.get(), ingredient, outStrong.get());
         }
         BrewingRecipeRegistryAccessor.invokeRegisterPotionRecipe(in, ingredient, result);
@@ -63,10 +64,10 @@ public final class PotionShit {
         Identifier id = Registry.POTION.getId(potion);
         Optional<Potion> lengthy = Registry.POTION.getOrEmpty(new Identifier(id.getNamespace(), "long_" + id.getPath()));
         Optional<Potion> strong = Registry.POTION.getOrEmpty(new Identifier(id.getNamespace(), "strong_" + id.getPath()));
-        if(lengthy.isPresent()) {
+        if (lengthy.isPresent()) {
             BrewingRecipeRegistryAccessor.invokeRegisterPotionRecipe(potion, Items.REDSTONE, lengthy.get());
         }
-        if(strong.isPresent()) {
+        if (strong.isPresent()) {
             BrewingRecipeRegistryAccessor.invokeRegisterPotionRecipe(potion, Items.GLOWSTONE_DUST, strong.get());
         }
     }

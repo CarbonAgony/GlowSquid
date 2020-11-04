@@ -5,7 +5,8 @@
   "name": "Glowsquid",
   "description": "Glow squids in 1.16",
   "authors": [
-    "vcokltfre"
+    "vcokltfre",
+    "CactusDuper"
   ],
   "contact": {
     "website": "vcokltf.re"
@@ -27,6 +28,6 @@
   "depends": {
     "fabricloader": ">=0.10.3+build.211",
     "fabric": "*",
-    "minecraft": "1.16.3"
+    "minecraft": "1.16.4"
   }
 }

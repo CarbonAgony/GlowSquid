@@ -5,5 +5,7 @@
   "item.glowsquid.glowing_ink_sac": "Glowing Ink Sac",
   "item.minecraft.potion.effect.glowing": "Potion of Glowing",
   "item.minecraft.splash_potion.effect.glowing": "Splash Potion of Glowing",
-  "item.minecraft.lingering_potion.effect.glowing": "Lingering Potion of Glowing"
+  "item.minecraft.lingering_potion.effect.glowing": "Lingering Potion of Glowing",
+  "entity.glowsquid.glow_squid": "Glow Squid",
+  "biome.glowsquid.obsiland": "Test"
 }

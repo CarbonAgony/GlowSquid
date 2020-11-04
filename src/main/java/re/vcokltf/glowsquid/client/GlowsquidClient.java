@@ -15,6 +15,8 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import re.vcokltf.glowsquid.Glowsquid;
+import re.vcokltf.glowsquid.init.BlockInit;
+import re.vcokltf.glowsquid.init.EntityInit;
 import re.vcokltf.glowsquid.renderer.GlowSquidEntityRenderer;
 
 @Environment(EnvType.CLIENT)
@@ -22,11 +24,11 @@ public class GlowsquidClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.GLOWING_GLASS, RenderLayer.getTranslucent());
-        BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.UNDERWATER_TORCH, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(Glowsquid.UNDERWATER_TORCH_WALL, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.GLOWING_GLASS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.UNDERWATER_TORCH, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(BlockInit.UNDERWATER_TORCH_WALL, RenderLayer.getCutout());
 
-        EntityRendererRegistry.INSTANCE.register(Glowsquid.GLOW_SQUID, (dispatcher, context) -> {
+        EntityRendererRegistry.INSTANCE.register(EntityInit.GLOW_SQUID, (dispatcher, context) -> {
             return new GlowSquidEntityRenderer(dispatcher);
         });
     }
