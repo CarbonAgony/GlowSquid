@@ -1,3 +1,9 @@
 {
-  "item.glowsquid.glowing_ink_sac": "Glowing Ink Sac"
+  "block.glowsquid.glowing_glass": "Glowing Glass",
+  "block.glowsquid.underwater_torch": "Underwater Torch",
+  "item.glowsquid.glowsquid_spawn_egg": "Spawn Glow Squid",
+  "item.glowsquid.glowing_ink_sac": "Glowing Ink Sac",
+  "item.minecraft.potion.effect.glowing": "Potion of Glowing",
+  "item.minecraft.splash_potion.effect.glowing": "Splash Potion of Glowing",
+  "item.minecraft.lingering_potion.effect.glowing": "Lingering Potion of Glowing"
 }

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "G",
+    "T"
+  ],
+  "key": {
+    "G": {
+      "item": "glowsquid:glowing_ink_sac"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "glowsquid:underwater_torch",
+    "count": 1
+  }
+}
