@@ -73,14 +73,13 @@ public class UnderwaterTorchWall extends UnderwaterTorch implements Waterloggabl
                 Direction direction2 = direction.getOpposite();
                 blockState = (BlockState)blockState.with(FACING, direction2);
                 if (blockState.canPlaceAt(worldView, blockPos)) {
-                    //return super.getPlacementState(ctx).with(WATERLOGGED, bl);
                     return blockState.with(WATERLOGGED, bl);
                 }
             }
         }
 
 
-        return null;//: super.getPlacementState(ctx).with(WATERLOGGED, bl);
+        return null;
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState newState, WorldAccess world, BlockPos pos, BlockPos posFrom) {
