@@ -1,17 +1,11 @@
 # GlowSquid
 
-Yep. It's literally just a mob.
+Check the curseforge page for more info!
 
- 
+https://www.curseforge.com/minecraft/mc-mods/glow-squid
 
 Requires:
-[lambdynamiclights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights)
-[modmenu](https://www.curseforge.com/minecraft/mc-mods/modmenu)
+
 [fabric-api](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 
  
-
-Big thanks to the developer of lambdynamiclights!! <3
-
-how to use:
-/summon glowsquid:glow_squid
